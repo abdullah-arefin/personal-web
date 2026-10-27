@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies - Abdullah Shamsul Arefin</title>
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Internal CSS (demonstrates Part 3 requirement) -->
+  <style>
+    .hobby-list-sub {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <h2>Abdullah Arefin</h2>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About Me</a></li>
+        <li><a href="../index.html#education">Education</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#interests">Interests</a></li>
+        <li><a href="../index.html#favorites">Favorites</a></li>
+        <li><a href="hobbies.html">Hobbies Page</a></li>
+      </ul>
+      <button id="theme-btn" type="button">Toggle Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Intro Section -->
+    <section class="section">
+      <h1>Things I Do For Fun</h1>
+      <!-- Inline Style -->
+      <p style="font-size: 1.15rem; color: #4A943E; font-weight: bold;">
+        Beyond classes and code, here is how I unwind, stay active, and find creative inspiration.
+      </p>
+    </section>
+
+    <!-- Hobbies Grid Section -->
+    <section class="section section-alt">
+      <h2>My Hobbies &amp; Pastimes</h2>
+      
+      <div class="skills-container">
+        
+        <!-- Cricket -->
+        <article class="skill-box" id="cricket">
+          <h3>01. Watching &amp; Playing Cricket</h3>
+          <p>
+            Cricket is my favorite sport to follow and play. Whether watching international test matches, the World Cup, or playing friendly matches with classmates, it brings great excitement and team spirit.
+          </p>
+          <p>Follow cricket scores on <a href="https://www.espncricinfo.com/" target="_blank">ESPN Cricinfo</a>.</p>
+        </article>
+
+        <!-- Movies -->
+        <article class="skill-box" id="movies">
+          <h3>02. Watching Movies</h3>
+          <p>
+            I love cinema with compelling character arcs, psychological puzzles, and meaningful screenplays.
+          </p>
+          <p><strong>Two of my top favorite films:</strong></p>
+          <ul class="hobby-list-sub">
+            <li><strong>Good Will Hunting:</strong> An inspiring story about genius, vulnerability, and mentorship.</li>
+            <li><strong>The Prestige:</strong> A masterclass in suspense, mystery, and storytelling by Christopher Nolan.</li>
+          </ul>
+        </article>
+
+
+
+        <!-- Reading -->
+        <article class="skill-box" id="reading">
+          <h3>03. Reading</h3>
+          <p>
+            Reading helps me step away from screens to learn about philosophy, history, and human behavior.
+          </p>
+          <p>Check my top books in the <a href="../index.html#favorites">Favorites table</a> on the homepage.</p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Abdullah Shamsul Arefin. All rights reserved.</p>
+      <p><strong>Page Location:</strong> <span id="page-location"></span></p>
+      <p><strong>Last Modified:</strong> <span id="last-modified"></span></p>
+      <p><a href="../index.html">← Back to Homepage</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

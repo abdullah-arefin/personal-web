@@ -1,0 +1,368 @@
+/* =========================================
+   1. Basic Reset & Color Palette
+   Palette:
+     - Warm Orange : #D98327
+     - Soft Cream  : #ECE8AF
+     - Grass Green : #4A943E
+     - Deep Green  : #186049
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fafbf7;
+  color: #222e28;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* =========================================
+   2. Bonus: Dark Mode Theme
+   ========================================= */
+body.dark-mode {
+  background-color: #121f19;
+  color: #ECE8AF;
+}
+
+body.dark-mode header,
+body.dark-mode .section-alt,
+body.dark-mode footer,
+body.dark-mode .skill-box,
+body.dark-mode table {
+  background-color: #1b2e26;
+  color: #ECE8AF;
+  border-color: #4A943E;
+}
+
+body.dark-mode .nav-links a {
+  color: #ECE8AF;
+}
+
+body.dark-mode .nav-links a:hover {
+  background-color: #D98327;
+  color: #ffffff;
+}
+
+body.dark-mode tbody tr:nth-child(even) {
+  background-color: #243d32;
+}
+
+body.dark-mode tbody tr:hover {
+  background-color: #2f4e41;
+}
+
+body.dark-mode a {
+  color: #e59d4c;
+}
+
+/* =========================================
+   3. Header & Horizontal Navigation
+   ========================================= */
+header {
+  background-color: #ffffff;
+  border-bottom: 3px solid #186049;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar h2 {
+  color: #186049;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+/* Horizontal section links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  display: inline-block;
+  text-decoration: none;
+  color: #186049;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-links a:hover {
+  background-color: #4A943E;
+  color: #ffffff;
+}
+
+#theme-btn {
+  padding: 7px 14px;
+  cursor: pointer;
+  border: 2px solid #D98327;
+  border-radius: 20px;
+  background-color: #D98327;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.85rem;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+#theme-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* =========================================
+   4. Sections & Content Layout
+   ========================================= */
+.section {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.section-alt {
+  background-color: #f3f5eb;
+  border-radius: 10px;
+  border-left: 6px solid #4A943E;
+}
+
+h1, h2, h3 {
+  color: #186049;
+  margin-bottom: 14px;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #ECE8AF;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+a {
+  color: #D98327;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #186049;
+}
+
+/* Intro Hero layout */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1 1 500px;
+}
+
+.intro-image {
+  flex: 0 1 240px;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 12px;
+  border: 4px solid #4A943E;
+  box-shadow: 0 6px 16px rgba(24, 96, 73, 0.2);
+}
+
+/* Education block */
+.education-block {
+  border-left: 4px solid #D98327;
+  padding-left: 16px;
+  margin-top: 15px;
+}
+
+/* Technical skills cards */
+.skills-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  flex: 1 1 280px;
+  background-color: #ffffff;
+  padding: 22px;
+  border: 2px solid #ECE8AF;
+  border-top: 5px solid #4A943E;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Quote styling */
+.quote-box {
+  border-left: 6px solid #D98327;
+  background-color: #ECE8AF;
+  color: #186049;
+  padding: 16px 20px;
+  margin: 22px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+cite {
+  font-weight: bold;
+  color: #D98327;
+}
+
+/* Styled categorized list */
+.styled-list {
+  margin: 15px 0 0 25px;
+}
+
+.styled-list li {
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   5. Table Styling (Part 3 Requirements)
+   ========================================= */
+.table-container {
+  overflow-x: auto;
+  margin: 25px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 2px solid #186049;
+}
+
+caption {
+  font-weight: bold;
+  color: #186049;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+body.dark-mode caption {
+  color: #ECE8AF;
+}
+
+th, td {
+  border: 1px solid #c9d8d0;
+  padding: 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #186049;
+  color: #ECE8AF;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+/* Striped rows using cream tint */
+tbody tr:nth-child(even) {
+  background-color: #f7f9f0;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background-color: #ECE8AF;
+  color: #186049;
+  transition: background-color 0.2s ease;
+}
+
+/* Remote web image */
+.web-image-box {
+  margin-top: 35px;
+}
+
+.web-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #186049;
+}
+
+.caption {
+  font-size: 0.85rem;
+  color: #66756e;
+  margin-top: 8px;
+}
+
+/* =========================================
+   6. Footer
+   ========================================= */
+footer {
+  border-top: 3px solid #186049;
+  background-color: #ECE8AF;
+  color: #186049;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+.footer-content p {
+  margin-bottom: 6px;
+}
+
+footer a {
+  color: #186049;
+  text-decoration: underline;
+}
+
+/* =========================================
+   7. Responsive adjustments
+   ========================================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .intro-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-image {
+    order: -1;
+  }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah Shamsul Arefin - Personal Homepage</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Internal CSS (Demonstrates Part 3 requirement) -->
+  <style>
+    .highlight-name {
+      color: #186049;
+      font-weight: bold;
+    }
+
+    .custom-subtext {
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar (Horizontal Layout) -->
+  <header>
+    <nav class="navbar">
+      <h2>Abdullah Arefin</h2>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="pages/hobbies.html">Hobbies Page</a></li>
+      </ul>
+      <!-- Bonus: Dark Mode Toggle Button -->
+      <button id="theme-btn" type="button">Toggle Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="intro-container">
+        <div class="intro-text">
+          <h1>Hello, I'm <span class="highlight-name">Abdullah Shamsul Arefin</span></h1>
+          <!-- Inline CSS (Demonstrates Part 3 requirement) -->
+          <p class="custom-subtext" style="font-size: 1.15rem; color: #4A943E;">
+            Undergraduate Student in Computer Science &amp; Engineering
+          </p>
+          <!-- Hyperlinks: One embedded in a sentence, BRAC University, Discord -->
+          <p>
+            I am currently completing my undergraduate studies at
+            <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a>,
+            focusing on core computer science concepts and web programming. You can also join our student discussion on
+            the
+            <a href="https://discord.com/" target="_blank">CSE 391 Discord page</a>.
+          </p>
+          <p>
+            Connect with me:
+            <a href="https://github.com/abdullah-arefin" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/abdullah-arefin" target="_blank">LinkedIn</a> |
+            <a href="mailto:abdullah.shamsul.arefin@gmail.com">Email Me</a>
+          </p>
+        </div>
+
+        <!-- Local Image (Part 3 Requirement) -->
+        <div class="intro-image">
+          <img src="assets/abdullah.jpeg" alt="Photograph of Abdullah Shamsul Arefin" class="profile-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+      <h2>Education</h2>
+      <div class="education-block">
+        <h3>B.Sc. in Computer Science and Engineering</h3>
+        <p><strong>BRAC University</strong>, Dhaka, Bangladesh</p>
+        <p>Status: Final Year</p>
+        <p>Key focus areas: Web Technologies, Problem Solving, and Software Engineering.</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill-box">
+          <h3>Frontend Development</h3>
+          <p>HTML5, CSS3, JavaScript, Responsive Layouts</p>
+        </div>
+        <div class="skill-box">
+          <h3>Programming Languages</h3>
+          <p>Python, C, C++, JavaScript, MySQL</p>
+        </div>
+        <div class="skill-box">
+          <h3>Tools &amp; Environments</h3>
+          <p>Git, GitHub, VS Code, Linux</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests & Favorite Quote Section -->
+    <section id="interests" class="section section-alt">
+      <h2>Interests &amp; Inspiration</h2>
+
+      <!-- Favorite Quote (Part 2 Requirement) -->
+      <div class="quote-box">
+        <blockquote>
+          "Those who look for seashells will find seashells; those who open them will find pearls."
+        </blockquote>
+        <cite>-Imam Al-Ghazali </cite>
+      </div>
+
+      <!-- Categorized List of Links (Part 1 & 2 Requirements) -->
+      <h3>Things I Enjoy</h3>
+      <ul class="styled-list">
+        <li><strong>Cricket:</strong> Passionate about following international tournaments and playing matches with
+          friends. Read more in my <a href="pages/hobbies.html#cricket">Cricket hobby section</a>.</li>
+        <li><strong>Movies:</strong> Fascinated by story-driven cinema and thought-provoking scripts like <em>Good Will
+            Hunting</em> and <em>The Prestige</em>. Details in <a href="pages/hobbies.html#movies">Favorite movies</a>.
+        </li>
+        <li><strong>Reading:</strong> Reading books on personal development, habits, and computing. Check out the <a
+            href="pages/hobbies.html#reading">Reading section</a>.</li>
+      </ul>
+    </section>
+
+    <!-- Favorites Table Section -->
+    <section id="favorites" class="section">
+      <h2>My Favorite Media</h2>
+      <p>A list of films and books that have inspired me:</p>
+
+      <!-- Structured Table with Rowspan and Colspan (Part 3 Requirement) -->
+      <div class="table-container">
+        <table>
+          <caption>Top Media Recommendations</caption>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Notes / Remarks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td>Good Will Hunting</td>
+              <td>Film</td>
+              <td>A touching and memorable drama about mentorship, intelligence, and self-acceptance.</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>The Prestige</td>
+              <td>Film</td>
+              <td>A masterfully crafted mystery thriller showcasing the rivalry between two magicians.</td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>Atomic Habits</td>
+              <td>Book</td>
+              <td>Practical strategies on building strong daily routines and compounding personal progress.</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+
+
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Abdullah Shamsul Arefin. All rights reserved.</p>
+      <!-- JavaScript populated location and last modified date (Part 3 Requirement) -->
+      <p><strong>Page Location:</strong> <span id="page-location"></span></p>
+      <p><strong>Last Modified:</strong> <span id="last-modified"></span></p>
+      <p><a href="#about">Back to Top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
